@@ -1,0 +1,99 @@
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Background and Form Styling */
+    .login-background {
+      background: #ffffff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-form {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 400px;
+      height: 500px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .login-form:hover {
+      transform: scale(1.05);
+    }
+
+    /* Input and Button Styling */
+    .form-control {
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .login-btn {
+      width: 100%;
+      background: rgba(0, 0, 0);
+      color: #ffffff;
+      border: 2px solid rgba(0, 0, 0, 0.507);
+      padding: 0.5rem 0;
+      margin-top: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border-color: transparent;
+    }
+
+    /* Checkbox and Title Styling */
+    .checkbox-label {
+      user-select: none;
+      color: rgba(27, 0, 107, 0.9);
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .checkbox-label input {
+      margin-right: 0.5rem;
+    }
+
+    .login-title {
+      color: rgba(0, 0, 0);
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 2rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-background">
+    <div class="login-form shadow-lg">
+      <div class="login-title">Freshly</div>
+      <input type="text" placeholder="User Name" class="form-control" />
+      <input type="password" placeholder="Password" class="form-control" />
+      <label class="checkbox-label">
+        <input type="checkbox" /> Remember Me
+      </label>
+      <button class="login-btn">Login</button>
+    </div>
+  </div>
+</body>
